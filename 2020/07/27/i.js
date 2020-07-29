@@ -1,6 +1,8 @@
 //alert("i");
-var v = bl$("id_div_" + "plxName-i.js"); 
-v.innerHTML = "i.js test v0.0. 41 ";
+var v 		= bl$("id_div_" + "plxName-i.js"); 
+v.innerHTML 	= "i.js test v0.0. 51 ";
+v.fV		= "https://github.com/littleflute/newTed/releases/download/1-30/blTed001.mkv";
+
 var b1	=  blo0.blBtn( v , v.id + "b1" , "b1", "gold" );
  
 b1.n = 0;
@@ -9,6 +11,10 @@ b1. onclick = function(){
 	b1.n++;
 	b1.v1.innerHTML = b1.n;	
 }
+
+var btnMyVideo	=  blo0.blBtn( v , v.id + " btnMyVideo	" , "btnMyVideo", blGrey[0] );
+
+btnMyVideo.onclick = function(){ 	play(v.fV); 	}
 
 var btnTitle	=  blo0.blBtn( v , v.id + "btnTitle	" , "title", "brown" );
 btnTitle. onclick  = function(){
@@ -37,14 +43,24 @@ btnBody	. onclick  = function(){
 var btnParseBody	=  blo0.blBtn( v , v.id + " btnParseBody	" , " ParseBody	", "purple" );
 btnParseBody	. onclick  = function(){
 	b1.v1.innerHTML = btnBody	.v.innerHTML;
-	var m = document.getElementsByTagName("textarea"); var p = m[0]; p.value = this.id;
+	var m = document.getElementsByTagName("textarea"); 
+	var p = m[0]; 
+	p.value = this.id;
 }
 
 //=======================================================================================================
 var ftnI = function(){//ftnI;
 /*
+--title--
 
-Cole Porter, 1891-1964: He Wrote Songs for Broadway Musicals and Movies That Are Still Popular Today;;
+Cole Porter, 1891-1964: He Wrote Songs for Broadway Musicals and Movies That Are Still Popular Today
+==title==
+
+;;
+
+
+
+--body--
 
 By Shelley Gollust
 2008-2-16
@@ -53,6 +69,7 @@ VOICE ONE:
 This is Faith Lapidus.
 
 VOICE TWO:
+==body==
 
 */
 }
